@@ -3,3 +3,51 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.mt_160 {
+  margin-top: 160px;
+}
+
+.mt_120 {
+  margin-top: 120px;
+}
+
+.mt_48 {
+  margin-top: 48px;
+}
+
+.mt_32 {
+  margin-top: 32px;
+}
+
+.fs_50 {
+  font-size:50px;
+  font-weight:  800;
+  color:#274C5B;
+  font-family: Roboto;
+}
+
+.fs_36 {
+  font-size:36px;
+  font-weight:400;
+  color:#7EB693;
+  font-family: Yellowtail;
+}
+
+.fs_25 {
+  font-size:25px;
+  font-weight:500;
+  color:#274C5B;
+  font-family: Roboto;
+}
+
+.fs_20 {
+  font-size:20px;
+}
+
+.fs_18 {
+  font-size:18px;
+  font-weight:400;
+  color:#274C5B;
+  font-family: "Open Sans", serif;
+}
