@@ -72,7 +72,7 @@ header .right_header {
 }
 
 header .right_header .search_right_header{
-    display-flex;
+    display:flex;
     width: 100%;
     max-width: 376px;
     position: relative;
@@ -126,7 +126,7 @@ header .right_header .shop_right_header {
 .shop_right_header .product_quanity {
     font-size: 18px;
     font-weight: 600;
-    back-ground color: #274c5b;
+    background-color: #274c5b;
 }
 
 /* Common Banner */
