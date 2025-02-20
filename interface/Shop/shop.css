@@ -49,17 +49,13 @@
 @media (max-width:560px) {
   .content{
     grid-template-columns: 335px;
-    background-color: #f9f8f8;
     padding: 50px 10px;
   }  
   .vegetable_common .cost_vegetable{
     flex-direction: row;
     align-items: flex-end;
   }
-  .vegetable_common{
-    border: 1px solid #000;
-  }
-  .vegetable_common:nth-child(13), .vegetable_common:nth-child(5),.vegetable_common:nth-child(6),.vegetable_common:nth-child(7),.vegetable_common:nth-child(8),.vegetable_common:nth-child(9),.vegetable_common:nth-child(10),.vegetable_common:nth-child(11),.vegetable_common:nth-child(12){
+  .vegetable_common:nth-child(4),.vegetable_common:nth-child(13), .vegetable_common:nth-child(5),.vegetable_common:nth-child(6),.vegetable_common:nth-child(7),.vegetable_common:nth-child(8),.vegetable_common:nth-child(9),.vegetable_common:nth-child(10),.vegetable_common:nth-child(11),.vegetable_common:nth-child(12){
     display: none;
   }
   .arrow_left, .arrow_right{

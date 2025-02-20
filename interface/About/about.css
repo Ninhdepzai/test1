@@ -4,6 +4,23 @@
   box-sizing: border-box;
   font-family: "Roboto", serif;
 }
+.team_founder{
+    display: flex;
+    flex-direction: column;
+}
+.infor_employee{
+    display: flex;
+    justify-content: space-between;
+}
+.team_founder .name_employee{
+    font-size: 25px;
+    font-weight: 800;
+    color: #274c5b;
+    line-height: 29px;
+}
+.maket_top_img_1, .success_image_1{
+    display: none;
+}
 .button_common{
     width: 41%;
 }
@@ -78,9 +95,6 @@
     width:100%;
     gap:90px;
 }
-.about_common{
-    width: 22.68%;
-}
 .maket_top{
     width:100%;
     display:flex;
@@ -89,8 +103,9 @@
 .maket_bottom{
     max-width:1133px;
     width:78.95%;
-    display:flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:35px
 }
 .maket_top_content{
     max-width:671px;
@@ -140,7 +155,9 @@
     color:#274C5B;
     font-family: Roboto;
 } 
-
+.about_common .about_line_one {
+    color: #274C5B;
+}
 /* Organic Expect */
 .organic_expect{
     max-width:1241px;
@@ -216,7 +233,7 @@ text-align:center;
     overflow: hidden;
 }
 
-@media (max-width:1105px) {
+@media (max-width:1035px) {
     .success{
         flex-direction: column;
     }
@@ -228,11 +245,81 @@ text-align:center;
     .success_content{
         width: 100%;
     }
+    .success_image_1{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }    
+    .maket_top_img_1{
+        display: block;
+        max-width: 714px;
+        width: 100%;
+        height: clamp(300px, 60vw, 624px);
+        align-self: center;
+    }
+    .maket_top_img, .success_image{
+        display: none;
+        display: none;
+    }
+    .marketing, .organic_expect, .offer{
+        padding: 80px 20px;
+    }
+    .maket_top_content>p:nth-child(2){
+        font-size: 40px;
+    }
+    .maket_top_content{
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .natural_product{
+        width: 100%;
+        max-width: none;
+    }
+    .maket_top_content p:nth-child(4){
+        margin-top: 15px;
+        text-align: justify;
+    }
+    .maket_bottom{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team_founder .name_employee{
+        font-size: 20px;
+    }
+    .organic_expect p:nth-child(2), .offer_text p:nth-child(2), .success_content > p:nth-child(2), .success_content  > p:nth-child(3){
+        font-size: 40px;
+    }
 }
 
 @media (max-width:768px) {
     .success{
         padding: 60px 20px;
     }
-    
+    .organic_expect_img{
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer_img{
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+    }
+    .maket_top_content>p:nth-child(2) {
+        font-size: 30px;
+    }
+    .maket{
+        gap:50px
+    }    
+}
+
+@media (max-width:540px){
+    .organic_expect p:nth-child(2), .offer_text p:nth-child(2), .success_content > p:nth-child(2), .success_content  > p:nth-child(3){
+        font-size: 30px;
+    }
+    .equipment_morden p, .equipment_hormones p{
+        font-size: 18px;
+    }
+    .maket_bottom{
+        width: 100%;
+    }
 }
