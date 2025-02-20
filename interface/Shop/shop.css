@@ -2,4 +2,70 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+.container{
+  max-width: 1920px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.arrow_left, .arrow_right{
+  display: none;
+}
+.banner{
+  background-image:url("../../img/banner-shop.png") ;
+}
+.content{
+  max-width:1440px;
+  padding: 90px 20px 0 20px;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 335px)) ;
+  row-gap:40px;
+  column-gap:20px;
+  justify-content: center;
+}
+.infor_vegetalbe img{
+  height: clamp(250px,23.14vw, 324px);
+  width: 100%;
+  max-height: 324px;
+  mix-blend-mode: multiply;
+}
+.vegetable_common:nth-child(10) .infor_vegetalbe img{
+  transform: rotate(-29.93deg);
+}
+
+@media (max-width:768px) {
+  .content{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  }  
+  .vegetable_common .cost_vegetable {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width:560px) {
+  .content{
+    grid-template-columns: 335px;
+    background-color: #f9f8f8;
+    padding: 50px 10px;
+  }  
+  .vegetable_common .cost_vegetable{
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .vegetable_common{
+    border: 1px solid #000;
+  }
+  .vegetable_common:nth-child(13), .vegetable_common:nth-child(5),.vegetable_common:nth-child(6),.vegetable_common:nth-child(7),.vegetable_common:nth-child(8),.vegetable_common:nth-child(9),.vegetable_common:nth-child(10),.vegetable_common:nth-child(11),.vegetable_common:nth-child(12){
+    display: none;
+  }
+  .arrow_left, .arrow_right{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+  } 
 }

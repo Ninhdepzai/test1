@@ -1,5 +1,238 @@
-*{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+.button_common{
+    width: 41%;
+}
+.container{
+    max-width: 1920px;
+    width:100%;
+    display:flex; 
+    flex-direction:column;
+    align-items: center;
+}
+.success{
+    max-width: 1760px;
+    width: 100%;
+    display: flex;
+    padding: 120px 20px;
+    align-items: center;
+}
+.success_image{
+    width:56.97%;
+    max-width:980px;
+    height:clamp(650px, 44.65vw,768px);
+}
+.success_content{
+    max-width:740px;
+    width:43.02%;
+    text-align:left;
+}
+.success_content p:nth-child(4){
+    margin-top: 14px;
+}
+.success_content p:nth-child(5){
+    margin-top: 30px;
+}
+.equipment{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.equipment_morden{
+    display:flex;
+    align-items:center;
+    max-width:357px;
+    width:48.24%;
+    gap:15px;
+}
+.equipment_hormones{
+    display:flex;
+    align-items:center;
+    max-width:296px;
+    width:48.78%;
+    gap:15px;
+}
+.button_common{
+    margin-top: 48px;
+}
+
+/* marketing */
+.marketing{
+    max-width:1920px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#f9f8f8;
+    padding: 160px 20px;
+}
+.maket{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    max-width:1435px;
+    width:100%;
+    gap:90px;
+}
+.about_common{
+    width: 22.68%;
+}
+.maket_top{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.maket_bottom{
+    max-width:1133px;
+    width:78.95%;
+    display:flex;
+    justify-content:space-between;
+}
+.maket_top_content{
+    max-width:671px;
+    width:46.75%;
+    text-align:left;
+}
+.maket_top_img{
+    max-width:714px;
+    width:49.75%;
+    aspect-ratio: 714/624;
+}
+.natural_product{
+    max-width:486px;
+    width:72.42%;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top: 36px;
+}
+.maket_top_content p:nth-child(3){
+    margin-top: 25px;
+}
+.incress{
+    max-width:339px;
+    width:69.75%;
+    background-color:#ececec;
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding-left:27px;
+    border-radius:49px;
+    height: 81px;
+}
+.natural_product_text{
+    align-self: flex-end;
+    width:91.35%;
+}
+.incress div{
+    width:19px;
+    height:19px;
+    border-radius:50%;
+    border:5px solid #7eb693;
+}
+.fs_20{
+    font-weight:500;
+    line-height:23px;
+    color:#274C5B;
+    font-family: Roboto;
+} 
+
+/* Organic Expect */
+.organic_expect{
+    max-width:1241px;
+    padding: 160px 20px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:42px;
+}
+.organic_expect_p{
+    margin-top:16px;
+    max-width: 852px;
+    width:100%;
+}
+.organic_expect_img{
+    display:flex;
+    gap: 27px;
+    width:100%;
+}
+.organic_expect_text{
+    text-align: center;
+}
+.avatar_member{
+    width: 100%;
+    max-width: 499px;
+}
+.team_founder{
+    background-color: #f9f8f8;
+}
+.team_founder:hover{
+    background-color: #fff;
+    box-shadow: 0 0 5px 10px rgba(249,248,248,0.5);
+}
+
+/* offer for you */
+.offer{
+    width:100%;
+background-color:#274C5B;
+display:flex;
+align-items:center;
+justify-content:center;
+padding: 160px 10px;
+}
+.offer_content{
+    max-width:1400px;
+    width:100%;
+}
+.offer_img{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:21px;
+    width:100%;
+}
+.offer_text p:first-child{
+    text-align:center;
+}
+.offer_text p:nth-child(2){
+    margin-top:8px;
+color:#fff;
+text-align:center;
+}
+.offer_nen1 img{
+    overflow-x: hidden;
+}
+
+.offer_nen{
+    max-width: 336px;
+    width: 100%;
+    max-height: 314px;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media (max-width:1105px) {
+    .success{
+        flex-direction: column;
+    }
+    .success_image{
+        width: 100%;
+        aspect-ratio: 980 / 768;
+        height: auto;
+    }
+    .success_content{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .success{
+        padding: 60px 20px;
+    }
+    
 }

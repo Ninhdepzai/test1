@@ -7,10 +7,6 @@
   box-sizing: border-box;
   font-family: "Roboto", serif;
 }
-
-body {
-}
-
 /* Common header */
 header {
   display: flex;
@@ -126,15 +122,16 @@ header .right_header .shop_right_header {
 .shop_right_header .product_quanity {
     font-size: 18px;
     font-weight: 600;
-    background-color: #274c5b;
+    color: #274c5b;
 }
 
 /* Common Banner */
 .banner {
     background-image: url(../img/about_img.png);
     background-repeat: no-repeat;
+    background-size: contain;
     width: 100%;
-    height: 450px;
+    max-height: 450px;
     position: relative;
 }
 
@@ -170,13 +167,15 @@ footer .align_top_footer {
     width:100%;
     max-width:1400px;
     background-image:url(../img/Background_top_footer.png);
-    height:323px;
     display:flex;
     padding: 0 min(71px, 5%);
     justify-content:space-between;
     align-items:center;
     margin: 0 auto;
     border-radius: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1400 / 323;
 }
 
 footer .top_footer p {
@@ -471,12 +470,14 @@ footer .bottom_footer {
 }
 
 .about_common .about_line_one {
+    color: #274C5B;
     font-size: 25px;
     font-weight: 800;
     margin-top: 15px;
 }
 
 .about_common .about_line_two {
+    color: #274C5B;
     font-family: "Open Sans", serif;
     font-size: 18px;
     font-weight:400;
@@ -490,7 +491,7 @@ footer .bottom_footer {
 .organic_expect_common {
     width: 100%;
     max-width:449px;
-    boder-radius: 30px; 
+    border-radius: 30px; 
 }
 
 .organic_expect_common .team_founder {
