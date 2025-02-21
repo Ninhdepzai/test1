@@ -59,7 +59,7 @@
 
       <!-- content -->
       <div class="content">
-          <img src="../../img/arrow-top-shop.png" class="arrow_left"/> 
+          <img src="../../img/arrow-top-shop.png" class="arrow_top"/> 
           <!-- 1 -->
           <div class="vegetable_common">
             <div class="titile_vegetable">
@@ -336,7 +336,7 @@
               </div>
             </div>
           </div>
-          <img src="../../img/arrow-bottom-shop.png" class="arrow_left"/>
+          <img src="../../img/arrow-bottom-shop.png" class="arrow_bottom"/>
       </div>
       <!-- Common Footer -->
       <footer>
@@ -397,5 +397,52 @@
         </div>
       </footer>
     </div>
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".vegetable_common");
+    const upArrow = document.querySelector(".arrow_top");
+    const downArrow = document.querySelector(".arrow_bottom");
+    let currentIndex = 0;
+
+    function updateVisibility() {
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth <= 560) {
+            items.forEach((item, index) => {
+                item.style.display = (index === currentIndex || index === currentIndex + 1) ? "block" : "none";
+            });
+
+            upArrow.style.display = currentIndex === 0 ? "none" : "block";
+            downArrow.style.display = currentIndex + 2 >= items.length ? "none" : "block";
+        } else {
+            items.forEach(item => {
+                item.style.display = "block";
+            });
+            upArrow.style.display = "none";
+            downArrow.style.display = "none";
+        }
+    }
+
+    downArrow.addEventListener("click", function () {
+        if (currentIndex + 2 < items.length) {
+            currentIndex += 2;
+            updateVisibility();
+        }
+    });
+
+    upArrow.addEventListener("click", function () {
+        if (currentIndex - 2 >= 0) {
+            currentIndex -= 2;
+            updateVisibility();
+        }
+    });
+
+    window.addEventListener("resize", updateVisibility);
+
+    updateVisibility();
+  });
+
+
+    </script>
   </body>
 </html>

@@ -24,6 +24,12 @@
 .button_common{
     width: 41%;
 }
+.about_common{
+    padding-top: 0;
+}
+.about_common .about_icon_box{
+    margin: 50px auto 0;
+}
 .container{
     max-width: 1920px;
     width:100%;
@@ -48,10 +54,10 @@
     width:43.02%;
     text-align:left;
 }
-.success_content p:nth-child(4){
+.success_content p:nth-child(5){
     margin-top: 14px;
 }
-.success_content p:nth-child(5){
+.success_content p:nth-child(6){
     margin-top: 30px;
 }
 .equipment{
@@ -232,6 +238,9 @@ text-align:center;
     border-radius: 30px;
     overflow: hidden;
 }
+footer .bottom_footer{
+    margin-top: 0;
+}
 
 @media (max-width:1035px) {
     .success{
@@ -256,6 +265,7 @@ text-align:center;
         width: 100%;
         height: clamp(300px, 60vw, 624px);
         align-self: center;
+        margin-top: 10px;
     }
     .maket_top_img, .success_image{
         display: none;
@@ -323,3 +333,21 @@ text-align:center;
         width: 100%;
     }
 }
+@media (max-width:480px) {
+    footer {
+      padding-top:90px ;
+    }
+    .maket_bottom {
+        grid-template-columns: 257px;
+        justify-content: center;
+    }
+    .button_common p{
+        font-size: 16px;
+    }
+    .equipment_morden p, .equipment_hormones p{
+        font-size: 16px;
+    }
+    footer .top_footer p {
+        font-size: 20px;
+    }
+  }

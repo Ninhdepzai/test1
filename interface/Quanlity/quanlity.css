@@ -129,6 +129,9 @@
   font-family: Roboto;
   border-radius: 50%;
 }
+footer .bottom_footer{
+  margin-top: 0;
+}
 
 @media (max-width:1024px) {
   .salah{
@@ -201,4 +204,31 @@
   .salah{
     padding:60px 20px 0 20px;
   }
+}
+
+@media (max-width:480px) {
+  footer {
+    padding-top:90px ;
+  }
+  footer .top_footer p {
+    font-size: 20px;
+  }
+  .best_quality{
+    flex-direction: column;
+  }
+  .money_back, .guarantee{
+    width: 100%;
+  }
+  .circle_number{
+    height: 69px;
+  }
+  .banner p{
+    font-size: 23px;
+  }
+  .tree_one p{
+    font-size: 14px;
+  }
+  .salah_content_store p:first-child {
+    font-size: 30px;
+}
 }
